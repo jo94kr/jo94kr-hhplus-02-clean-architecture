@@ -9,8 +9,8 @@
 ## Requirements
 
 - 아래 2가지 API 를 구현합니다.
-  - 특강 신청 API
-  - 특강 신청 여부 조회 API
+    - 특강 신청 API
+    - 특강 신청 여부 조회 API
 - 각 기능 및 제약 사항에 대해 단위 테스트를 반드시 하나 이상 작성하도록 합니다.
 - 다수의 인스턴스로 어플리케이션이 동작하더라도 기능에 문제가 없도록 작성하도록 합니다.
 - 동시성 이슈를 고려하여 구현합니다.
@@ -28,7 +28,7 @@
 2️⃣**(기본)** 특강 목록 API **`GET /lectures`**
 
 - [x] 단 한번의 특강을 위한 것이 아닌 날짜별로 특강이 존재할 수 있는 범용적인 서비스로 변화시켜 봅니다.
-  - 이를 수용하기 위해, 특강 엔티티의 경우 기본 과제 SPEC 을 만족하는 설계에서 변경되어야 할 수 있습니다.
+    - 이를 수용하기 위해, 특강 엔티티의 경우 기본 과제 SPEC 을 만족하는 설계에서 변경되어야 할 수 있습니다.
 - [x] 특강의 정원은 30명으로 고정이며, 사용자는 각 특강에 신청하기전 목록을 조회해볼 수 있어야 합니다.
 
 3️⃣**(기본)** 특강 신청 완료 여부 조회 API **`GET /lectures/application/{userId}`**
@@ -99,7 +99,6 @@ Clean + Layered Architecture
 │      └─service
 │              ApplyLectureValidator.java
 │              LectureService.java
-│              LectureServiceImpl.java
 │              LectureValidator.java
 │
 └─infra
@@ -121,7 +120,6 @@ Clean + Layered Architecture
             LectureHistoryMapper.java
             LectureMapper.java
             LectureScheduleMapper.java
-
 
 ```
 
